@@ -1,0 +1,62 @@
+# Python/cache/env
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Models / datasets / HF cache
+models/
+hf_cache/
+data/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.msgpack
+
+# Keep experiment results and logs
+!outputs/
+!outputs/**
+!logs/
+!logs/**
+!runs/
+!runs/**
+
+# OS/editor/secrets
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+
+# LaTeX build trash, but keep logs/ experiment logs due rules above
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb

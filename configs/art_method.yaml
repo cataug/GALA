@@ -1,0 +1,89 @@
+project_name: ARTeccv
+
+paths:
+  project_dir: /home/tahiti/ARTeccv
+  wikiart_dir: /home/tahiti/ARTeccv/data/wikiart
+  models_dir: /home/tahiti/ARTeccv/models
+  outputs_dir: /home/tahiti/ARTeccv/outputs
+  runs_dir: /home/tahiti/ARTeccv/runs
+
+data:
+  image_extensions: [".jpg", ".jpeg", ".png", ".webp"]
+  label_mode: parent
+  max_images: null
+  min_per_class: 2
+  seed: 42
+
+generation:
+  max_new_tokens: 220
+  temperature: 0.0
+  do_sample: false
+  auto_batch: true
+  start_batch_qwen: 8
+  start_batch_llava: 16
+  max_batch_qwen: 32
+  max_batch_llava: 64
+  increase_every_success_batches: 8
+  target_gpu_mem_util: 0.92
+
+models:
+  qwen25vl_3b:
+    kind: qwen25vl
+    local_dir: /home/tahiti/ARTeccv/models/qwen2_5_vl_3b_instruct
+
+  llava_onevision_0_5b:
+    kind: llava_onevision
+    local_dir: /home/tahiti/ARTeccv/models/llava_onevision_qwen2_0_5b_ov_hf
+
+ablations:
+  full: >
+    Describe this artwork for an art-history retrieval system.
+    Use the following sections exactly:
+    Visible content:
+    Composition:
+    Color and texture:
+    Style cues:
+    Uncertain hypotheses:
+    Mention visible objects, figures, scene elements, spatial layout, color palette, brushwork or texture cues, and possible period or style cues.
+    Separate directly visible evidence from uncertain interpretation.
+    Do not invent the artist name, exact title, exact date, or museum.
+
+  visual_only: >
+    Describe only what is directly visible in this artwork.
+    Use the following sections exactly:
+    Visible content:
+    Composition:
+    Color and texture:
+    Do not mention artist, title, exact date, museum, country, movement, or historical period unless it is directly visible as text in the image.
+
+  no_uncertainty: >
+    Describe this artwork for an art-history retrieval system.
+    Use the following sections exactly:
+    Visible content:
+    Composition:
+    Color and texture:
+    Style cues:
+    Mention visible objects, composition, color palette, texture, and likely style cues.
+    Do not invent the artist name, exact title, exact date, or museum.
+
+  no_style: >
+    Describe this artwork for a visual search system.
+    Use the following sections exactly:
+    Visible content:
+    Composition:
+    Color and texture:
+    Avoid naming art styles, periods, artists, schools, museums, or exact dates.
+    Focus on visible objects, layout, colors, brushwork, and image structure.
+
+  compact: >
+    Give a compact artwork description in 3 sentences.
+    Include visible content, composition, color palette, and only cautious style cues.
+    Do not invent artist name, title, date, or museum.
+
+retrieval:
+  text_embedding_model: intfloat/e5-small-v2
+  clip_model: ViT-B-32
+  clip_pretrained: laion2b_s34b_b79k
+  batch_text_embed: 128
+  batch_clip: 128
+  ks: [1, 5, 10]

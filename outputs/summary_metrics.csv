@@ -1,0 +1,14 @@
+system,model_key,ablation,embedding_file,recall@1,map@1,recall@5,map@5,recall@10,map@10,n_items,n_classes,n_generations,empty_rate,avg_words,median_words,lexical_label_alignment,hallucination_proxy_rate,hallucination_proxy_count
+baseline_clip_image,baseline,clip_image,/home/tahiti/ARTeccv/outputs/embeddings/baseline_clip_image.npz,1.0,1.0,1.0,1.0,1.0,1.0,5000,1,,,,,,,
+baseline_metadata_label_text,baseline,metadata_label_text,/home/tahiti/ARTeccv/outputs/embeddings/baseline_metadata_label_text.npz,1.0,1.0,1.0,1.0,1.0,1.0,5000,1,,,,,,,
+baseline_random,baseline,random,/home/tahiti/ARTeccv/outputs/embeddings/baseline_random.npz,1.0,1.0,1.0,1.0,1.0,1.0,5000,1,,,,,,,
+llava_onevision_0_5b__compact,llava_onevision_0_5b,compact,/home/tahiti/ARTeccv/outputs/embeddings/llava_onevision_0_5b__compact.npz,1.0,1.0,1.0,1.0,1.0,1.0,5000,1,5000.0,0.0,52.0814,50.0,0.0008,0.15196699134199135,0.4706
+llava_onevision_0_5b__full,llava_onevision_0_5b,full,/home/tahiti/ARTeccv/outputs/embeddings/llava_onevision_0_5b__full.npz,1.0,1.0,1.0,1.0,1.0,1.0,5000,1,5000.0,0.0,153.6368,154.0,0.0006,0.22688261649461647,1.7174
+llava_onevision_0_5b__no_style,llava_onevision_0_5b,no_style,/home/tahiti/ARTeccv/outputs/embeddings/llava_onevision_0_5b__no_style.npz,1.0,1.0,1.0,1.0,1.0,1.0,5000,1,5000.0,0.0,125.508,122.0,0.0016,0.11678453025235633,0.7874
+llava_onevision_0_5b__no_uncertainty,llava_onevision_0_5b,no_uncertainty,/home/tahiti/ARTeccv/outputs/embeddings/llava_onevision_0_5b__no_uncertainty.npz,1.0,1.0,1.0,1.0,1.0,1.0,5000,1,5000.0,0.0,142.4644,139.0,0.001,0.2878254218004218,1.95
+llava_onevision_0_5b__visual_only,llava_onevision_0_5b,visual_only,/home/tahiti/ARTeccv/outputs/embeddings/llava_onevision_0_5b__visual_only.npz,1.0,1.0,1.0,1.0,1.0,1.0,5000,1,5000.0,0.0,126.8872,124.0,0.001,0.17475140845488973,1.1874
+qwen25vl_3b__compact,qwen25vl_3b,compact,/home/tahiti/ARTeccv/outputs/embeddings/qwen25vl_3b__compact.npz,1.0,1.0,1.0,1.0,1.0,1.0,5000,1,5000.0,0.0,69.7828,69.0,0.0018,0.1269447619047619,0.4936
+qwen25vl_3b__full,qwen25vl_3b,full,/home/tahiti/ARTeccv/outputs/embeddings/qwen25vl_3b__full.npz,1.0,1.0,1.0,1.0,1.0,1.0,4680,1,5000.0,0.064,164.524,176.0,0.003,0.06698783674731515,0.947
+qwen25vl_3b__no_style,qwen25vl_3b,no_style,/home/tahiti/ARTeccv/outputs/embeddings/qwen25vl_3b__no_style.npz,1.0,1.0,1.0,1.0,1.0,1.0,5000,1,5000.0,0.0,131.6916,131.0,0.0064,0.009042856686059338,0.1316
+qwen25vl_3b__no_uncertainty,qwen25vl_3b,no_uncertainty,/home/tahiti/ARTeccv/outputs/embeddings/qwen25vl_3b__no_uncertainty.npz,1.0,1.0,1.0,1.0,1.0,1.0,4959,1,5000.0,0.0082,171.8666,176.0,0.002,0.058620272607770925,0.7588
+qwen25vl_3b__visual_only,qwen25vl_3b,visual_only,/home/tahiti/ARTeccv/outputs/embeddings/qwen25vl_3b__visual_only.npz,1.0,1.0,1.0,1.0,1.0,1.0,4911,1,5000.0,0.0178,103.044,104.0,0.0016,0.014516488363717465,0.111

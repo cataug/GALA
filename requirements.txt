@@ -1,0 +1,14 @@
+torch
+torchvision
+accelerate
+huggingface_hub
+safetensors
+sentencepiece
+protobuf
+pillow
+opencv-python
+pandas
+numpy
+tqdm
+qwen-vl-utils[decord]==0.0.8
+git+https://github.com/huggingface/transformers
