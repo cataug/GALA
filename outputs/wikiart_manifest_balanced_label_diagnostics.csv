@@ -1,0 +1,5 @@
+label_col,n_total,n_valid,n_classes,min_class_count,median_class_count,max_class_count
+label,5000,5000,129,5,31.0,80
+artist,5000,5000,129,5,31.0,80
+style,5000,5000,25,1,90.0,1056
+genre,5000,5000,11,79,339.0,1176

@@ -10,3 +10,9 @@ classes       : 1
 saved stats   : /home/tahiti/ARTeccv/outputs/wikiart_label_stats_parent.csv
  label  count
 images   5000
+saved manifest: /home/tahiti/ARTeccv/outputs/wikiart_manifest_parent.csv
+rows          : 81444
+classes       : 1
+saved stats   : /home/tahiti/ARTeccv/outputs/wikiart_label_stats_parent.csv
+ label  count
+images  81444

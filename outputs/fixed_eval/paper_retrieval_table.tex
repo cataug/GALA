@@ -1,0 +1,43 @@
+\begin{table}
+\caption{Retrieval performance under non-degenerate artwork metadata targets.}
+\label{tab:retrieval_fixed}
+\begin{tabular}{llrrrrr}
+\toprule
+label_col & system & n_classes & recall@1 & recall@5 & recall@10 & map@10 \\
+\midrule
+artist_style & baseline_random_fixed & 266.000 & 0.007 & 0.034 & 0.070 & 0.002 \\
+artist_style & baseline_clip_image & 266.000 & 0.008 & 0.037 & 0.070 & 0.002 \\
+artist_style & baseline_metadata_label_text & 266.000 & 0.004 & 0.032 & 0.052 & 0.002 \\
+artist_style & qwen25vl_3b__full & 262.000 & 0.008 & 0.037 & 0.070 & 0.002 \\
+artist_style & qwen25vl_3b__visual_only & 264.000 & 0.007 & 0.037 & 0.070 & 0.002 \\
+artist_style & qwen25vl_3b__no_style & 266.000 & 0.007 & 0.034 & 0.067 & 0.002 \\
+artist_style & qwen25vl_3b__no_uncertainty & 266.000 & 0.006 & 0.031 & 0.062 & 0.002 \\
+artist_style & llava_onevision_0_5b__full & 266.000 & 0.007 & 0.039 & 0.077 & 0.002 \\
+artist_style & llava_onevision_0_5b__visual_only & 266.000 & 0.008 & 0.041 & 0.075 & 0.002 \\
+artist_style & llava_onevision_0_5b__no_style & 266.000 & 0.007 & 0.037 & 0.074 & 0.002 \\
+artist_style & llava_onevision_0_5b__no_uncertainty & 266.000 & 0.008 & 0.042 & 0.076 & 0.002 \\
+style_genre & baseline_random_fixed & 144.000 & 0.025 & 0.108 & 0.199 & 0.008 \\
+style_genre & baseline_clip_image & 144.000 & 0.024 & 0.114 & 0.204 & 0.008 \\
+style_genre & baseline_metadata_label_text & 144.000 & 0.031 & 0.046 & 0.080 & 0.004 \\
+style_genre & qwen25vl_3b__full & 142.000 & 0.026 & 0.120 & 0.203 & 0.008 \\
+style_genre & qwen25vl_3b__visual_only & 144.000 & 0.021 & 0.103 & 0.191 & 0.007 \\
+style_genre & qwen25vl_3b__no_style & 144.000 & 0.022 & 0.109 & 0.197 & 0.007 \\
+style_genre & qwen25vl_3b__no_uncertainty & 144.000 & 0.025 & 0.107 & 0.193 & 0.008 \\
+style_genre & llava_onevision_0_5b__full & 144.000 & 0.023 & 0.108 & 0.196 & 0.007 \\
+style_genre & llava_onevision_0_5b__visual_only & 144.000 & 0.024 & 0.107 & 0.198 & 0.008 \\
+style_genre & llava_onevision_0_5b__no_style & 144.000 & 0.027 & 0.114 & 0.204 & 0.008 \\
+style_genre & llava_onevision_0_5b__no_uncertainty & 144.000 & 0.023 & 0.110 & 0.200 & 0.008 \\
+artist & baseline_random_fixed & 129.000 & 0.011 & 0.048 & 0.094 & 0.003 \\
+artist & baseline_clip_image & 129.000 & 0.012 & 0.051 & 0.093 & 0.003 \\
+artist & baseline_metadata_label_text & 129.000 & 0.007 & 0.038 & 0.074 & 0.002 \\
+artist & qwen25vl_3b__full & 129.000 & 0.009 & 0.046 & 0.093 & 0.003 \\
+artist & qwen25vl_3b__visual_only & 129.000 & 0.010 & 0.052 & 0.097 & 0.003 \\
+artist & qwen25vl_3b__no_style & 129.000 & 0.010 & 0.045 & 0.091 & 0.003 \\
+artist & qwen25vl_3b__no_uncertainty & 129.000 & 0.008 & 0.042 & 0.086 & 0.003 \\
+artist & llava_onevision_0_5b__full & 129.000 & 0.010 & 0.055 & 0.106 & 0.003 \\
+artist & llava_onevision_0_5b__visual_only & 129.000 & 0.010 & 0.053 & 0.097 & 0.003 \\
+artist & llava_onevision_0_5b__no_style & 129.000 & 0.009 & 0.054 & 0.103 & 0.003 \\
+artist & llava_onevision_0_5b__no_uncertainty & 129.000 & 0.010 & 0.056 & 0.101 & 0.003 \\
+\bottomrule
+\end{tabular}
+\end{table}

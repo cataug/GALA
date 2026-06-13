@@ -1,0 +1,77 @@
+============================================================
+GALA paper visual generation
+============================================================
+Using retrieval metrics: outputs/fixed_eval_existing/retrieval_metrics_fixed.csv
+Using manifest: outputs/manifest_for_existing_generations.csv
+Using claim metrics: outputs/summary_metrics.csv
+
+[1/7] Retrieval heatmap
+saved: outputs/paper_figures/fig1_retrieval_heatmap.png
+saved: outputs/paper_figures/fig1_retrieval_heatmap.pdf
+
+[2/7] Retrieval dashboard
+saved: outputs/paper_figures/fig2_retrieval_dashboard.png
+saved: outputs/paper_figures/fig2_retrieval_dashboard.pdf
+
+[3/7] Retrieval--reliability tradeoff
+saved: outputs/paper_figures/fig3_retrieval_reliability_tradeoff.png
+saved: outputs/paper_figures/fig3_retrieval_reliability_tradeoff.pdf
+
+[4/7] Prompt safety ablation
+saved: outputs/paper_figures/fig4_prompt_safety_ablation.png
+saved: outputs/paper_figures/fig4_prompt_safety_ablation.pdf
+
+[5/7] Hybrid CLIP+VLM curves
+loaded embedding: baseline_clip_image.npz key=embeddings shape=(5000, 512)
+loaded embedding: llava_onevision_0_5b__visual_only.npz key=embeddings shape=(5000, 384)
+computing CLIP similarity
+computing LLaVA visual-only similarity
+saved: outputs/paper_figures/fig5_hybrid_retrieval_curves.png
+saved: outputs/paper_figures/fig5_hybrid_retrieval_curves.pdf
+
+[6/7] Qualitative retrieval gallery
+loaded embedding: baseline_clip_image.npz key=embeddings shape=(5000, 512)
+loaded embedding: llava_onevision_0_5b__visual_only.npz key=embeddings shape=(5000, 384)
+computing similarities for qualitative gallery
+saved: outputs/paper_figures/fig6_qualitative_retrieval_gallery.png
+saved: outputs/paper_figures/fig6_qualitative_retrieval_gallery.pdf
+
+[7/7] Bootstrap CI and paper tables
+loaded embedding: baseline_clip_image.npz key=embeddings shape=(5000, 512)
+bootstrap CI: computing S for baseline_clip_image
+loaded embedding: llava_onevision_0_5b__visual_only.npz key=embeddings shape=(5000, 384)
+bootstrap CI: computing S for llava_onevision_0_5b__visual_only
+loaded embedding: llava_onevision_0_5b__no_uncertainty.npz key=embeddings shape=(5000, 384)
+bootstrap CI: computing S for llava_onevision_0_5b__no_uncertainty
+loaded embedding: llava_onevision_0_5b__full.npz key=embeddings shape=(5000, 384)
+bootstrap CI: computing S for llava_onevision_0_5b__full
+saved: outputs/paper_figures/bootstrap_ci_query_level.csv
+saved: outputs/paper_figures/bootstrap_ci_recall1.tex
+saved: outputs/paper_figures/paper_main_retrieval_table.tex
+saved: outputs/paper_figures/paper_tradeoff_table.tex
+
+============================================================
+DONE. Figures saved in outputs/paper_figures/
+============================================================
+outputs/paper_figures/bootstrap_ci_query_level.csv  0.01 MB
+outputs/paper_figures/bootstrap_ci_recall1.tex  0.00 MB
+outputs/paper_figures/fig1_retrieval_heatmap.pdf  0.03 MB
+outputs/paper_figures/fig1_retrieval_heatmap.png  0.35 MB
+outputs/paper_figures/fig2_retrieval_dashboard.pdf  0.03 MB
+outputs/paper_figures/fig2_retrieval_dashboard.png  0.23 MB
+outputs/paper_figures/fig3_retrieval_reliability_tradeoff.pdf  0.02 MB
+outputs/paper_figures/fig3_retrieval_reliability_tradeoff.png  0.22 MB
+outputs/paper_figures/fig4_prompt_safety_ablation.pdf  0.02 MB
+outputs/paper_figures/fig4_prompt_safety_ablation.png  0.20 MB
+outputs/paper_figures/fig5_hybrid_retrieval_curves.pdf  0.03 MB
+outputs/paper_figures/fig5_hybrid_retrieval_curves.png  0.25 MB
+outputs/paper_figures/fig6_qualitative_retrieval_gallery.pdf  1.14 MB
+outputs/paper_figures/fig6_qualitative_retrieval_gallery.png  2.65 MB
+outputs/paper_figures/hybrid_clip_vlm_curves.csv  0.00 MB
+outputs/paper_figures/make_gala_paper_visuals.log  0.00 MB
+outputs/paper_figures/paper_main_retrieval_table.csv  0.00 MB
+outputs/paper_figures/paper_main_retrieval_table.tex  0.00 MB
+outputs/paper_figures/paper_tradeoff_table.csv  0.00 MB
+outputs/paper_figures/paper_tradeoff_table.tex  0.00 MB
+outputs/paper_figures/safety_ablation_table.csv  0.00 MB
+outputs/paper_figures/tradeoff_retrieval_reliability.csv  0.01 MB

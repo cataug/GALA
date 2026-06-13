@@ -1,0 +1,20 @@
+\begin{table}
+\caption{Retrieval--reliability trade-off for generated artwork descriptions.}
+\label{tab:gala_tradeoff}
+\begin{tabular}{lrrrrrrr}
+\toprule
+System & recall@1 & recall@10 & map@10 & unsupported_rate & unsupported_count & empty_rate & avg_words \\
+\midrule
+LLaVA compact & 0.385 & 0.751 & 0.217 & 0.152 & 0.471 & 0.000 & 52.081 \\
+LLaVA full & 0.393 & 0.757 & 0.227 & 0.227 & 1.717 & 0.000 & 153.637 \\
+LLaVA no-style & 0.380 & 0.743 & 0.218 & 0.117 & 0.787 & 0.000 & 125.508 \\
+LLaVA no-uncertainty & 0.408 & 0.758 & 0.237 & 0.288 & 1.950 & 0.000 & 142.464 \\
+LLaVA visual-only & 0.412 & 0.763 & 0.237 & 0.175 & 1.187 & 0.000 & 126.887 \\
+Qwen compact & 0.329 & 0.719 & 0.180 & 0.127 & 0.494 & 0.000 & 69.783 \\
+Qwen full & 0.034 & 0.299 & 0.012 & 0.067 & 0.947 & 0.064 & 164.524 \\
+Qwen no-style & 0.293 & 0.690 & 0.153 & 0.009 & 0.132 & 0.000 & 131.692 \\
+Qwen no-uncertainty & 0.038 & 0.294 & 0.011 & 0.059 & 0.759 & 0.008 & 171.867 \\
+Qwen visual-only & 0.034 & 0.305 & 0.012 & 0.015 & 0.111 & 0.018 & 103.044 \\
+\bottomrule
+\end{tabular}
+\end{table}

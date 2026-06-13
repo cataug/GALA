@@ -1,0 +1,11 @@
+label_col,n_total,n_valid_after_min_count,n_classes_after_min_count,min_class_count,median_class_count,max_class_count,usable
+artist_style,5000,4961,266,2,13.0,80,True
+style_genre,5000,4975,144,2,16.0,347,True
+artist,5000,5000,129,5,31.0,80,True
+label,5000,5000,129,5,31.0,80,True
+style,5000,4999,24,4,95.5,1056,True
+genre,5000,5000,11,79,339.0,1176,True
+grandparent_label,5000,5000,1,5000,5000.0,5000,False
+greatgrandparent_label,5000,5000,1,5000,5000.0,5000,False
+parent_grandparent,5000,5000,1,5000,5000.0,5000,False
+parent_label,5000,5000,1,5000,5000.0,5000,False

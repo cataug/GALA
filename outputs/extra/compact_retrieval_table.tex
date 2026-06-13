@@ -1,0 +1,40 @@
+\begin{table}
+\caption{Retrieval performance on corrected non-degenerate artwork metadata targets.}
+\label{tab:retrieval_corrected}
+\begin{tabular}{llrrrr}
+\toprule
+Target & System & R@1 & R@5 & R@10 & mAP@10 \\
+\midrule
+artist_style & random-fixed & 0.034 & 0.164 & 0.296 & 0.012 \\
+artist_style & clip-image & 0.647 & 0.837 & 0.889 & 0.467 \\
+artist_style & LLaVA-OneVision / full & 0.393 & 0.662 & 0.757 & 0.227 \\
+artist_style & LLaVA-OneVision / visual-only & 0.412 & 0.666 & 0.763 & 0.237 \\
+artist_style & LLaVA-OneVision / no-style & 0.380 & 0.647 & 0.743 & 0.218 \\
+artist_style & LLaVA-OneVision / no-uncertainty & 0.408 & 0.660 & 0.758 & 0.237 \\
+artist_style & Qwen2.5-VL / full & 0.034 & 0.169 & 0.299 & 0.012 \\
+artist_style & Qwen2.5-VL / visual-only & 0.034 & 0.167 & 0.305 & 0.012 \\
+artist_style & Qwen2.5-VL / no-style & 0.293 & 0.572 & 0.690 & 0.153 \\
+artist_style & Qwen2.5-VL / no-uncertainty & 0.038 & 0.159 & 0.294 & 0.011 \\
+style_genre & random-fixed & 0.032 & 0.142 & 0.253 & 0.010 \\
+style_genre & clip-image & 0.557 & 0.800 & 0.866 & 0.373 \\
+style_genre & LLaVA-OneVision / full & 0.371 & 0.657 & 0.750 & 0.216 \\
+style_genre & LLaVA-OneVision / visual-only & 0.397 & 0.667 & 0.759 & 0.229 \\
+style_genre & LLaVA-OneVision / no-style & 0.374 & 0.653 & 0.746 & 0.218 \\
+style_genre & LLaVA-OneVision / no-uncertainty & 0.381 & 0.663 & 0.760 & 0.216 \\
+style_genre & Qwen2.5-VL / full & 0.037 & 0.151 & 0.253 & 0.011 \\
+style_genre & Qwen2.5-VL / visual-only & 0.030 & 0.143 & 0.254 & 0.011 \\
+style_genre & Qwen2.5-VL / no-style & 0.293 & 0.577 & 0.691 & 0.160 \\
+style_genre & Qwen2.5-VL / no-uncertainty & 0.033 & 0.139 & 0.256 & 0.011 \\
+artist & random-fixed & 0.051 & 0.234 & 0.404 & 0.018 \\
+artist & clip-image & 0.721 & 0.893 & 0.935 & 0.532 \\
+artist & LLaVA-OneVision / full & 0.436 & 0.734 & 0.834 & 0.259 \\
+artist & LLaVA-OneVision / visual-only & 0.454 & 0.734 & 0.835 & 0.267 \\
+artist & LLaVA-OneVision / no-style & 0.425 & 0.714 & 0.816 & 0.247 \\
+artist & LLaVA-OneVision / no-uncertainty & 0.456 & 0.727 & 0.829 & 0.270 \\
+artist & Qwen2.5-VL / full & 0.052 & 0.241 & 0.409 & 0.018 \\
+artist & Qwen2.5-VL / visual-only & 0.048 & 0.232 & 0.406 & 0.018 \\
+artist & Qwen2.5-VL / no-style & 0.331 & 0.652 & 0.779 & 0.174 \\
+artist & Qwen2.5-VL / no-uncertainty & 0.054 & 0.226 & 0.397 & 0.017 \\
+\bottomrule
+\end{tabular}
+\end{table}

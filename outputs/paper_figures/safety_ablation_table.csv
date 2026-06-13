@@ -1,0 +1,11 @@
+model,prompt,unsupported_rate,unsupported_count,empty_rate
+LLaVA-OneVision,compact,0.1519669913419913,0.4706,0.0
+LLaVA-OneVision,full,0.2268826164946164,1.7174,0.0
+LLaVA-OneVision,no_style,0.1167845302523563,0.7874,0.0
+LLaVA-OneVision,no_uncertainty,0.2878254218004218,1.95,0.0
+LLaVA-OneVision,visual_only,0.1747514084548897,1.1874,0.0
+Qwen2.5-VL,compact,0.1269447619047619,0.4936,0.0
+Qwen2.5-VL,full,0.0669878367473151,0.947,0.064
+Qwen2.5-VL,no_style,0.0090428566860593,0.1316,0.0
+Qwen2.5-VL,no_uncertainty,0.0586202726077709,0.7588,0.0082
+Qwen2.5-VL,visual_only,0.0145164883637174,0.111,0.0178

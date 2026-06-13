@@ -1,0 +1,54 @@
+\begin{tabular}{llrrrrrr}
+\toprule
+label\_col & system & n\_items & n\_classes & map@10 & recall@1 & recall@5 & recall@10 \\
+\midrule
+artist & qwen25vl_3b__compact & 5000.000 & 129.000 & 0.003 & 0.012 & 0.053 & 0.104 \\
+artist & baseline_clip_image & 5000.000 & 129.000 & 0.003 & 0.012 & 0.051 & 0.093 \\
+artist & qwen25vl_3b__visual_only & 4911.000 & 129.000 & 0.003 & 0.010 & 0.052 & 0.097 \\
+artist & llava_onevision_0_5b__full & 5000.000 & 129.000 & 0.003 & 0.010 & 0.055 & 0.106 \\
+artist & llava_onevision_0_5b__no_uncertainty & 5000.000 & 129.000 & 0.003 & 0.010 & 0.056 & 0.101 \\
+artist & qwen25vl_3b__no_style & 5000.000 & 129.000 & 0.003 & 0.010 & 0.045 & 0.091 \\
+artist & llava_onevision_0_5b__visual_only & 5000.000 & 129.000 & 0.003 & 0.010 & 0.053 & 0.097 \\
+artist & llava_onevision_0_5b__no_style & 5000.000 & 129.000 & 0.003 & 0.009 & 0.054 & 0.103 \\
+artist_style & qwen25vl_3b__compact & 4961.000 & 266.000 & 0.002 & 0.010 & 0.040 & 0.075 \\
+artist_style & baseline_clip_image & 4961.000 & 266.000 & 0.002 & 0.008 & 0.037 & 0.070 \\
+artist_style & llava_onevision_0_5b__no_uncertainty & 4961.000 & 266.000 & 0.002 & 0.008 & 0.042 & 0.076 \\
+artist_style & llava_onevision_0_5b__visual_only & 4961.000 & 266.000 & 0.002 & 0.008 & 0.041 & 0.075 \\
+artist_style & qwen25vl_3b__full & 4638.000 & 262.000 & 0.002 & 0.008 & 0.037 & 0.070 \\
+artist_style & qwen25vl_3b__no_style & 4961.000 & 266.000 & 0.002 & 0.007 & 0.034 & 0.067 \\
+artist_style & qwen25vl_3b__visual_only & 4870.000 & 264.000 & 0.002 & 0.007 & 0.037 & 0.070 \\
+artist_style & llava_onevision_0_5b__full & 4961.000 & 266.000 & 0.002 & 0.007 & 0.039 & 0.077 \\
+genre & baseline_metadata_label_text & 5000.000 & 11.000 & 0.052 & 0.235 & 0.489 & 0.770 \\
+genre & qwen25vl_3b__no_uncertainty & 4959.000 & 11.000 & 0.063 & 0.155 & 0.503 & 0.713 \\
+genre & llava_onevision_0_5b__compact & 5000.000 & 11.000 & 0.061 & 0.153 & 0.511 & 0.718 \\
+genre & qwen25vl_3b__visual_only & 4911.000 & 11.000 & 0.061 & 0.153 & 0.518 & 0.724 \\
+genre & qwen25vl_3b__compact & 5000.000 & 11.000 & 0.061 & 0.149 & 0.501 & 0.715 \\
+genre & qwen25vl_3b__full & 4680.000 & 11.000 & 0.061 & 0.149 & 0.499 & 0.716 \\
+genre & llava_onevision_0_5b__full & 5000.000 & 11.000 & 0.059 & 0.145 & 0.501 & 0.726 \\
+genre & llava_onevision_0_5b__no_uncertainty & 5000.000 & 11.000 & 0.061 & 0.145 & 0.503 & 0.714 \\
+label & qwen25vl_3b__compact & 5000.000 & 129.000 & 0.003 & 0.012 & 0.053 & 0.104 \\
+label & baseline_clip_image & 5000.000 & 129.000 & 0.003 & 0.012 & 0.051 & 0.093 \\
+label & qwen25vl_3b__visual_only & 4911.000 & 129.000 & 0.003 & 0.010 & 0.052 & 0.097 \\
+label & llava_onevision_0_5b__full & 5000.000 & 129.000 & 0.003 & 0.010 & 0.055 & 0.106 \\
+label & llava_onevision_0_5b__no_uncertainty & 5000.000 & 129.000 & 0.003 & 0.010 & 0.056 & 0.101 \\
+label & qwen25vl_3b__no_style & 5000.000 & 129.000 & 0.003 & 0.010 & 0.045 & 0.091 \\
+label & llava_onevision_0_5b__visual_only & 5000.000 & 129.000 & 0.003 & 0.010 & 0.053 & 0.097 \\
+label & llava_onevision_0_5b__no_style & 5000.000 & 129.000 & 0.003 & 0.009 & 0.054 & 0.103 \\
+style & baseline_metadata_label_text & 4999.000 & 24.000 & 0.035 & 0.211 & 0.346 & 0.456 \\
+style & llava_onevision_0_5b__no_style & 4999.000 & 24.000 & 0.046 & 0.117 & 0.412 & 0.597 \\
+style & qwen25vl_3b__full & 4679.000 & 24.000 & 0.047 & 0.116 & 0.413 & 0.594 \\
+style & qwen25vl_3b__compact & 4999.000 & 24.000 & 0.045 & 0.115 & 0.414 & 0.597 \\
+style & qwen25vl_3b__no_style & 4999.000 & 24.000 & 0.045 & 0.114 & 0.414 & 0.607 \\
+style & qwen25vl_3b__no_uncertainty & 4958.000 & 24.000 & 0.046 & 0.114 & 0.395 & 0.587 \\
+style & qwen25vl_3b__visual_only & 4910.000 & 24.000 & 0.045 & 0.113 & 0.399 & 0.585 \\
+style & baseline_clip_image & 4999.000 & 24.000 & 0.046 & 0.113 & 0.417 & 0.602 \\
+style_genre & baseline_metadata_label_text & 4975.000 & 144.000 & 0.004 & 0.031 & 0.046 & 0.080 \\
+style_genre & llava_onevision_0_5b__no_style & 4975.000 & 144.000 & 0.008 & 0.027 & 0.114 & 0.204 \\
+style_genre & qwen25vl_3b__full & 4654.000 & 142.000 & 0.008 & 0.026 & 0.120 & 0.203 \\
+style_genre & qwen25vl_3b__no_uncertainty & 4934.000 & 144.000 & 0.008 & 0.025 & 0.107 & 0.193 \\
+style_genre & baseline_clip_image & 4975.000 & 144.000 & 0.008 & 0.024 & 0.114 & 0.204 \\
+style_genre & llava_onevision_0_5b__compact & 4975.000 & 144.000 & 0.008 & 0.024 & 0.114 & 0.203 \\
+style_genre & llava_onevision_0_5b__visual_only & 4975.000 & 144.000 & 0.008 & 0.024 & 0.107 & 0.198 \\
+style_genre & qwen25vl_3b__compact & 4975.000 & 144.000 & 0.008 & 0.023 & 0.110 & 0.196 \\
+\bottomrule
+\end{tabular}

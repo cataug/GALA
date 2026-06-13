@@ -1,0 +1,54 @@
+\begin{tabular}{llrrrrrr}
+\toprule
+label\_col & system & n\_items & n\_classes & map@10 & recall@1 & recall@5 & recall@10 \\
+\midrule
+artist & baseline_clip_image & 5000.000 & 24.000 & 0.532 & 0.721 & 0.893 & 0.935 \\
+artist & llava_onevision_0_5b__no_uncertainty & 5000.000 & 24.000 & 0.270 & 0.456 & 0.727 & 0.829 \\
+artist & llava_onevision_0_5b__visual_only & 5000.000 & 24.000 & 0.267 & 0.454 & 0.734 & 0.835 \\
+artist & llava_onevision_0_5b__full & 5000.000 & 24.000 & 0.259 & 0.436 & 0.734 & 0.834 \\
+artist & llava_onevision_0_5b__compact & 5000.000 & 24.000 & 0.246 & 0.426 & 0.720 & 0.823 \\
+artist & llava_onevision_0_5b__no_style & 5000.000 & 24.000 & 0.247 & 0.425 & 0.714 & 0.816 \\
+artist & qwen25vl_3b__compact & 5000.000 & 24.000 & 0.205 & 0.371 & 0.682 & 0.800 \\
+artist & qwen25vl_3b__no_style & 5000.000 & 24.000 & 0.174 & 0.331 & 0.652 & 0.779 \\
+artist_style & baseline_clip_image & 4996.000 & 67.000 & 0.467 & 0.647 & 0.837 & 0.889 \\
+artist_style & llava_onevision_0_5b__visual_only & 4996.000 & 67.000 & 0.237 & 0.412 & 0.666 & 0.763 \\
+artist_style & llava_onevision_0_5b__no_uncertainty & 4996.000 & 67.000 & 0.237 & 0.408 & 0.660 & 0.758 \\
+artist_style & llava_onevision_0_5b__full & 4996.000 & 67.000 & 0.227 & 0.393 & 0.662 & 0.757 \\
+artist_style & llava_onevision_0_5b__compact & 4996.000 & 67.000 & 0.217 & 0.385 & 0.650 & 0.751 \\
+artist_style & llava_onevision_0_5b__no_style & 4996.000 & 67.000 & 0.218 & 0.380 & 0.647 & 0.743 \\
+artist_style & qwen25vl_3b__compact & 4996.000 & 67.000 & 0.180 & 0.329 & 0.608 & 0.719 \\
+artist_style & qwen25vl_3b__no_style & 4996.000 & 67.000 & 0.153 & 0.293 & 0.572 & 0.690 \\
+genre & baseline_clip_image & 5000.000 & 11.000 & 0.540 & 0.697 & 0.908 & 0.952 \\
+genre & llava_onevision_0_5b__visual_only & 5000.000 & 11.000 & 0.460 & 0.622 & 0.870 & 0.929 \\
+genre & llava_onevision_0_5b__no_style & 5000.000 & 11.000 & 0.452 & 0.607 & 0.867 & 0.926 \\
+genre & llava_onevision_0_5b__no_uncertainty & 5000.000 & 11.000 & 0.433 & 0.597 & 0.860 & 0.922 \\
+genre & llava_onevision_0_5b__full & 5000.000 & 11.000 & 0.439 & 0.594 & 0.870 & 0.926 \\
+genre & llava_onevision_0_5b__compact & 5000.000 & 11.000 & 0.433 & 0.591 & 0.863 & 0.925 \\
+genre & qwen25vl_3b__compact & 5000.000 & 11.000 & 0.395 & 0.548 & 0.849 & 0.921 \\
+genre & qwen25vl_3b__no_style & 5000.000 & 11.000 & 0.371 & 0.524 & 0.832 & 0.911 \\
+label & baseline_clip_image & 5000.000 & 24.000 & 0.532 & 0.721 & 0.893 & 0.935 \\
+label & llava_onevision_0_5b__no_uncertainty & 5000.000 & 24.000 & 0.270 & 0.456 & 0.727 & 0.829 \\
+label & llava_onevision_0_5b__visual_only & 5000.000 & 24.000 & 0.267 & 0.454 & 0.734 & 0.835 \\
+label & llava_onevision_0_5b__full & 5000.000 & 24.000 & 0.259 & 0.436 & 0.734 & 0.834 \\
+label & llava_onevision_0_5b__compact & 5000.000 & 24.000 & 0.246 & 0.426 & 0.720 & 0.823 \\
+label & llava_onevision_0_5b__no_style & 5000.000 & 24.000 & 0.247 & 0.425 & 0.714 & 0.816 \\
+label & qwen25vl_3b__compact & 5000.000 & 24.000 & 0.205 & 0.371 & 0.682 & 0.800 \\
+label & qwen25vl_3b__no_style & 5000.000 & 24.000 & 0.174 & 0.331 & 0.652 & 0.779 \\
+style & baseline_clip_image & 5000.000 & 16.000 & 0.593 & 0.748 & 0.919 & 0.956 \\
+style & llava_onevision_0_5b__visual_only & 5000.000 & 16.000 & 0.388 & 0.565 & 0.825 & 0.897 \\
+style & llava_onevision_0_5b__no_uncertainty & 5000.000 & 16.000 & 0.384 & 0.555 & 0.821 & 0.894 \\
+style & llava_onevision_0_5b__full & 5000.000 & 16.000 & 0.372 & 0.549 & 0.825 & 0.899 \\
+style & llava_onevision_0_5b__compact & 5000.000 & 16.000 & 0.358 & 0.537 & 0.822 & 0.897 \\
+style & llava_onevision_0_5b__no_style & 5000.000 & 16.000 & 0.360 & 0.530 & 0.813 & 0.890 \\
+style & qwen25vl_3b__compact & 5000.000 & 16.000 & 0.319 & 0.489 & 0.782 & 0.873 \\
+style & qwen25vl_3b__no_style & 5000.000 & 16.000 & 0.276 & 0.435 & 0.759 & 0.864 \\
+style_genre & baseline_clip_image & 4978.000 & 100.000 & 0.373 & 0.557 & 0.800 & 0.866 \\
+style_genre & llava_onevision_0_5b__visual_only & 4978.000 & 100.000 & 0.229 & 0.397 & 0.667 & 0.759 \\
+style_genre & llava_onevision_0_5b__no_uncertainty & 4978.000 & 100.000 & 0.216 & 0.381 & 0.663 & 0.760 \\
+style_genre & llava_onevision_0_5b__no_style & 4978.000 & 100.000 & 0.218 & 0.374 & 0.653 & 0.746 \\
+style_genre & llava_onevision_0_5b__full & 4978.000 & 100.000 & 0.216 & 0.371 & 0.657 & 0.750 \\
+style_genre & llava_onevision_0_5b__compact & 4978.000 & 100.000 & 0.210 & 0.370 & 0.655 & 0.753 \\
+style_genre & qwen25vl_3b__compact & 4978.000 & 100.000 & 0.180 & 0.333 & 0.612 & 0.722 \\
+style_genre & qwen25vl_3b__no_style & 4978.000 & 100.000 & 0.160 & 0.293 & 0.577 & 0.691 \\
+\bottomrule
+\end{tabular}

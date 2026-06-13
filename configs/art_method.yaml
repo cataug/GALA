@@ -87,3 +87,5 @@ retrieval:
   batch_text_embed: 128
   batch_clip: 128
   ks: [1, 5, 10]
+
+manifest_path: outputs/wikiart_manifest_balanced.csv

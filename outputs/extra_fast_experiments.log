@@ -1,0 +1,18 @@
+Using retrieval metrics: outputs/fixed_eval_existing/retrieval_metrics_fixed.csv
+Using claim metrics: outputs/summary_metrics.csv
+Saved outputs/extra/compact_retrieval_table.csv
+Saved outputs/extra/compact_retrieval_table.tex
+Traceback (most recent call last):
+  File "/home/tahiti/ARTeccv/src/extra_fast_experiments.py", line 270, in <module>
+    main()
+  File "/home/tahiti/ARTeccv/src/extra_fast_experiments.py", line 263, in main
+    make_tradeoff_table(retrieval, claims)
+  File "/home/tahiti/ARTeccv/src/extra_fast_experiments.py", line 185, in make_tradeoff_table
+    merged = merged[cols].sort_values(["recall@1", "map@10"], ascending=False)
+  File "/home/tahiti/ARTeccv/.venv/lib/python3.10/site-packages/pandas/core/frame.py", line 7194, in sort_values
+    keys = [self._get_label_or_level_values(x, axis=axis) for x in by]
+  File "/home/tahiti/ARTeccv/.venv/lib/python3.10/site-packages/pandas/core/frame.py", line 7194, in <listcomp>
+    keys = [self._get_label_or_level_values(x, axis=axis) for x in by]
+  File "/home/tahiti/ARTeccv/.venv/lib/python3.10/site-packages/pandas/core/generic.py", line 1914, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'recall@1'

@@ -14,10 +14,12 @@ __pycache__/
 venv/
 env/
 
-# Models / datasets / HF cache
+# Heavy model/data folders
 models/
 hf_cache/
 data/
+
+# Model weights / huge binaries
 *.safetensors
 *.bin
 *.pt
@@ -27,13 +29,8 @@ data/
 *.h5
 *.msgpack
 
-# Keep experiment results and logs
-!outputs/
-!outputs/**
-!logs/
-!logs/**
-!runs/
-!runs/**
+# Backups are duplicated old outputs; keep final outputs instead
+outputs/backups/
 
 # OS/editor/secrets
 .DS_Store
@@ -44,7 +41,7 @@ Thumbs.db
 .env.*
 !.env.example
 
-# LaTeX build trash, but keep logs/ experiment logs due rules above
+# LaTeX build trash
 *.aux
 *.bbl
 *.bcf
